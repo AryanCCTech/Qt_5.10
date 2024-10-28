@@ -70,18 +70,6 @@ void STLReader::read(const std::string& fileName, Triangulation& triangulation)
                     Triangle t(normal, p1, p2, p3);
                     triangulation.Triangles.push_back(t);
                     pointIndices.clear();
-
-                    if (triangulation.uniqueNormalMap.find(normal) == triangulation.uniqueNormalMap.end()) {
-                        triangulation.uniqueNormalMap[normal] = triangulation.uniqueNormal.size();
-                        triangulation.uniqueNormal.push_back(normal);
-                    }
-
-                    for (Point p : { p1, p2, p3 }) {
-                        if (triangulation.uniqueVertexMap.find(p) == triangulation.uniqueVertexMap.end()) {
-                            triangulation.uniqueVertexMap[p] = triangulation.uniqueVertex.size();
-                            triangulation.uniqueVertex.push_back(p);
-                        }
-                    }
                 }
             }
         }

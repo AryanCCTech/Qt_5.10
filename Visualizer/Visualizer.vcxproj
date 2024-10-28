@@ -105,13 +105,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\DataWriter.h" />
+    <ClInclude Include="headers\ObjWriter.h" />
     <ClInclude Include="headers\Writer.h" />
     <ClInclude Include="headers\Point.h" />
     <ClInclude Include="headers\Reader.h" />
     <ClInclude Include="headers\STLReader.h" />
     <ClInclude Include="headers\Triangle.h" />
     <ClInclude Include="headers\Triangulation.h" />
-    <ClInclude Include="ObjWriter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

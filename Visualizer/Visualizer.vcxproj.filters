@@ -86,7 +86,7 @@
     <ClInclude Include="headers\DataWriter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ObjWriter.h">
+    <ClInclude Include="headers\ObjWriter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
